@@ -16,11 +16,13 @@ def fetch():
 				red = red + x
 			last = x
 	return full
-def basi1(font = []):
+def jfprint(font = [], text = "", delay = 0.1):
 	whitesp = 1	
 	
 	chars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "?", "!", ":", ".", ",", "'", "-", "|"]
-	text = input("Text: ").upper()
+	if text == "":
+		text = input("Text: ")
+	text = text.upper()
 	rows = ["", "", "", "", ""]
 	for letter in text:
 		if letter == " ":
@@ -42,7 +44,8 @@ def basi1(font = []):
 		for i in range(len(rows)):
 			rows[i] = rows[i] + artRows[i]
 	for i in rows:
-		time.sleep(0.1)
+		time.sleep(delay)
 		print(i)
-font = fetch()
-basi1(font)
+if __name__ == '__main__':
+	font = fetch()
+	jfprint(font)
