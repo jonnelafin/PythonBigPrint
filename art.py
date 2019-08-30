@@ -19,7 +19,7 @@ def fetch():
 def basi1(font = []):
 	whitesp = 1	
 	
-	chars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "?", "!", ":", ".", ",", "-", "|"]
+	chars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "?", "!", ":", ".", ",", "'", "-", "|"]
 	text = input("Text: ").upper()
 	rows = ["", "", "", "", ""]
 	for letter in text:
